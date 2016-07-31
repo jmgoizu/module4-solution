@@ -58,8 +58,10 @@ WARNING!!! WARNING!!!
      
      // console.log ("primera letra: " + firstLetter);
   // 
-      var nameLowcase = names[i].toLowerCase();
-      var firstLetter = nameLowcase.charAt(0);
+      // var nameLowcase = names[i].toLowerCase();
+      // var firstLetter = nameLowcase.charAt(0);
+
+      var firstLetter = names[i].charAt(0).toLowerCase();
   // STEP 12:
   // Compare the 'firstLetter' retrieved in STEP 11 to lower case
   // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
@@ -70,10 +72,10 @@ WARNING!!! WARNING!!!
 
       if (firstLetter == ("j")) {
         // console.log("Es una J/j");
-        byeSpeaker.speak (nameLowcase); 
+        byeSpeaker.speak (names[i]); 
       } else {
         // console.log("No es una j");
-        helloSpeaker.speak (nameLowcase);
+        helloSpeaker.speak (names[i]);
       }
 
     }
